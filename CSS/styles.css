@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    color: #40514E;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-family: 'Patrick Hand', cursive;
+    font-size: 4.5rem;
+    color: #66BFBF;
+    margin: 0 auto 10px auto;
+    line-height: 1.5;
+}
+
+h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 1.5rem;
+    color: #66BFBF;
+    margin: 0;
+    font-weight: normal;
+}
+
+h3 {
+    font-family: 'Merriweather', serif;
+    color: #66BFBF;
+}
+
+a {
+    color: #11999E;
+}
+
+a:hover {
+    color: #EAF6F6;
+}
+
+hr {
+    border-top: 5px dotted #66BFBF;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+    width: 66%;
+    margin: 30px auto;
+}
+
+.top-container {
+    background-color: #f1fcfc;
+    position: relative;
+    padding: 50px;
+}
+.bottom-container {
+    background-color: #66BFBF;
+    margin: 50px 0 0 0;
+    padding: 15px 0 0 0;
+}
+.career {
+    width: 66%;
+    margin: 10px auto;
+}
+.projects {
+    width: 66%;
+    margin: 10px auto;
+}
+.skills {
+    margin-bottom: 40px
+}
+.skill-row {
+    width: 66%;
+    margin: 50px auto;
+    text-align: left;
+}
+.headshot {
+    border-radius: 75px;
+    width: 150px;
+}
+.sql-icon {
+    width: 9rem;
+    float: left;
+    margin-right: 30px;
+}
+.webdev-icon {
+    width: 5rem;
+    float: right;
+    margin-left: 30px;
+}
+.btn {
+    border-radius: 20px;
+    height: 19px;
+    line-height: 19px;
+    color: #EAF6F6;
+    width: 137px;
+    font-size: 16px;
+    font-weight: 100;
+    padding: 11px;
+    background-color: #11999E;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+}
+.footer-link {
+    padding: 10px 20px;
+    color: #11999E;
+    text-decoration: none;
+}
+.footer-tag {
+    margin: 0;
+    padding: 10px 0;
+    color: #EAF6F6;
+    font-size: 0.7rem;
+}
