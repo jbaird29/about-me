@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <title>Jon Baird</title>
+        <link
+            href="https://fonts.googleapis.com/css?family=Amatic+SC|Bellota|Indie+Flower|Merriweather|Montserrat|Patrick+Hand&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/navbar.css" />
+        <link rel="stylesheet" href="css/footer.css" />
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="icon" href="favicon.ico" />
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="career.html">Career Experience</a></li>
+                <li><a href="portfolio.html">Portfolio Highlights</a></li>
+                <li><a class="active-nav" href="personal.html">Personal Interests</a></li>
+            </ul>
+        </nav>
+
+        <main></main>
+
+        <footer>
+            <p class="footer-tag">© <span id="copyright-year"></span> Jonathan Baird.</p>
+        </footer>
+    </body>
+
+    <script>
+        document.getElementById("copyright-year").innerText = new Date().getFullYear();
+    </script>
+</html>

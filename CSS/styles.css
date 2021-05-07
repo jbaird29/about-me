@@ -48,40 +48,13 @@ hr {
     background-color: #f1fcfc;
 }
 
-.career {
-    width: 66%;
-    margin: 10px auto;
-}
-.projects {
-    width: 66%;
-    margin: 10px auto;
-}
-.skill-row {
-    width: 66%;
-    margin: 50px auto;
-    text-align: left;
-}
-.headshot {
-    border-radius: 75px;
-    width: 150px;
-}
-.sql-icon {
-    width: 9rem;
-    float: left;
-    margin-right: 30px;
-}
-.webdev-icon {
-    width: 5rem;
-    float: right;
-    margin-left: 30px;
-}
 .btn {
     border-radius: 20px;
     height: 19px;
     line-height: 19px;
     color: #eaf6f6;
     width: 137px;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 100;
     padding: 11px;
     background-color: #11999e;
