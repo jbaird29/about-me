@@ -1,0 +1,39 @@
+nav {
+    padding: 0.8rem;
+    background-color: #11999e;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+}
+
+nav ul {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    color: #eaf6f6;
+    text-decoration: none;
+    text-align: center;
+    padding: 0.8rem 0.8rem;
+}
+
+nav a:hover {
+    opacity: 0.5;
+}
+
+.active-nav {
+    background-color: grey;
+}
+
+.active-nav:hover {
+    opacity: 0.7;
+}
