@@ -31,6 +31,10 @@ a:hover {
     color: #eaf6f6;
 }
 
+main {
+    padding-top: 50px;
+}
+
 hr {
     border-top: 5px dotted #66bfbf;
     border-bottom: 0;
@@ -42,7 +46,6 @@ hr {
 
 .top-container {
     background-color: #f1fcfc;
-    padding: 50px;
 }
 
 .career {
@@ -89,15 +92,4 @@ hr {
     display: inline-block;
     cursor: pointer;
     text-align: center;
-}
-.footer-link {
-    padding: 10px 20px;
-    color: #11999e;
-    text-decoration: none;
-}
-.footer-tag {
-    margin: 0;
-    padding: 10px 0;
-    color: #eaf6f6;
-    font-size: 0.7rem;
 }
