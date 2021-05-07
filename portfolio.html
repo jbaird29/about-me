@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <title>Jon Baird</title>
+        <link
+            href="https://fonts.googleapis.com/css?family=Amatic+SC|Bellota|Indie+Flower|Merriweather|Montserrat|Patrick+Hand&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/navbar.css" />
+        <link rel="stylesheet" href="css/footer.css" />
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="icon" href="favicon.ico" />
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="career.html">Career Experience</a></li>
+                <li><a class="active-nav" href="portfolio.html">Portfolio Highlights</a></li>
+                <li><a href="http://">Personal Interests</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h2>Project Portfolio</h2>
+            <p>
+                Featured: NFL-Table; Description: Single-page Web Application for interactively querying, filtering, and analyzing
+                play-by-play NFL statistics over the past ~10 seasons. Features: Preserve application state (form data, table display, etc.)
+                into a shareable URL. Javascript-based metadata layer acts as a "glue" to the front and back-end. Adding a new field or
+                filter to both the database and the UI is accomplished in one central repository. Front-end: React, Ant Design Framework;
+                Back-end: Node/Express; Google BigQuery; Google Firestore; Cloud Technologogies: Firebase Hosting, Firebase Functions
+                (Serverless)
+            </p>
+            <p>Janggi</p>
+            <hr />
+        </main>
+
+        <footer>
+            <p class="footer-tag">© <span id="copyright-year"></span> Jonathan Baird.</p>
+        </footer>
+    </body>
+
+    <script>
+        document.getElementById("copyright-year").innerText = new Date().getFullYear();
+    </script>
+</html>
