@@ -1,0 +1,47 @@
+#slideshow-container {
+    position: relative;
+    display: inline-block;
+}
+
+.slideshow-pic {
+    display: none;
+    border: 1px solid black;
+    max-height: 85vh;
+}
+
+.slideshow-pic-active {
+    display: block;
+}
+
+.slideshow-caption {
+    color: black;
+    display: none;
+    margin: 10px 0;
+}
+
+.slideshow-caption-active {
+    display: block;
+}
+
+.direction-btn {
+    position: absolute;
+    z-index: 1;
+    height: 99%;
+    bottom: 0;
+    border: 0;
+    background-color: black;
+    color: white;
+    opacity: 0.13;
+    padding: 0 12px;
+}
+.direction-btn:hover {
+    opacity: 0.6;
+}
+
+#previous-btn {
+    left: 0;
+}
+
+#next-btn {
+    right: 0;
+}

@@ -9,6 +9,7 @@
         />
         <link rel="stylesheet" href="css/navbar.css" />
         <link rel="stylesheet" href="css/footer.css" />
+        <link rel="stylesheet" href="css/personal.css" />
         <link rel="stylesheet" href="css/styles.css" />
         <link rel="icon" href="favicon.ico" />
     </head>
@@ -23,11 +24,28 @@
         </nav>
 
         <main>
-            <h2>Pictures of Me</h2>
-            <p>[TODO: Slideshow]</p>
-            <hr />
-            <h2>Interests / Hobbies</h2>
-            <p>[TODO]</p>
+            <p class="slideshow-caption slideshow-caption-active">Rooting for Philadelphia sports teams</p>
+            <p class="slideshow-caption">Spending time with my fiancee</p>
+            <p class="slideshow-caption">Playing (especially winning at) board games!</p>
+            <p class="slideshow-caption">Listening to music and attending concerts</p>
+            <p class="slideshow-caption">Exploring nature</p>
+            <p class="slideshow-caption">Exploring cities</p>
+            <p class="slideshow-caption">Playing with my cat - Goose</p>
+            <p class="slideshow-caption">Traveling to new countries</p>
+            <p class="slideshow-caption">Eating at new restaurants</p>
+            <div id="slideshow-container">
+                <img class="slideshow-pic slideshow-pic-active" src="images/personal/philly-sports.jpeg" alt="Philly Sports" />
+                <img class="slideshow-pic" src="images/personal/fiancee.jpeg" alt="Fiancee" />
+                <img class="slideshow-pic" src="images/personal/board-games.jpeg" alt="Board Games" />
+                <img class="slideshow-pic" src="images/personal/concerts.jpeg" alt="Concerts" />
+                <img class="slideshow-pic" src="images/personal/exploring-nature.jpeg" alt="Exploring Nature" />
+                <img class="slideshow-pic" src="images/personal/exploring-city.jpeg" alt="Exploring Cities" />
+                <img class="slideshow-pic" src="images/personal/goose.jpeg" alt="My Cat (Goose)" />
+                <img class="slideshow-pic" src="images/personal/traveling.jpeg" alt="Traveling" />
+                <img class="slideshow-pic" src="images/personal/restaurants.jpeg" alt="Restaurants" />
+                <button class="direction-btn" id="previous-btn">&#9664;</button>
+                <button class="direction-btn" id="next-btn">&#9654;</button>
+            </div>
         </main>
 
         <footer>
@@ -35,6 +53,7 @@
         </footer>
     </body>
 
+    <script src="scripts/personal-slideshow.js"></script>
     <script>
         document.getElementById("copyright-year").innerText = new Date().getFullYear();
     </script>
