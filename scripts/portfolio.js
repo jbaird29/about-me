@@ -1,39 +1,42 @@
-const iTS = `<span class="iconify" data-icon="logos:typescript-icon" data-inline="false"></span>`;
-const iReact = `<span class="iconify" data-icon="logos:react" data-inline="false"></span>`;
-const iNode = `<span class="iconify" data-icon="vscode-icons:file-type-node" data-inline="false"></span>`;
-const iGCloud = `<span class="iconify" data-icon="logos:google-cloud" data-inline="false"></span>`;
-const iFunctions = `<span class="iconify" data-icon="logos:google-cloud-functions" data-inline="false"></span>`;
-const iFirebase = `<span class="iconify" data-icon="logos:firebase" data-inline="false"></span>`;
-const iFirestore = `<span class="iconify" data-icon="vscode-icons:file-type-firestore" data-inline="false"></span>`;
-const iPandas = `<span class="iconify" data-icon="simple-icons:pandas" data-inline="false"></span>`;
+const iTS = `<span class="iconify" data-icon="logos:typescript-icon" data-inline="true"></span>`;
+const iReact = `<span class="iconify" data-icon="logos:react" data-inline="true"></span>`;
+const iNode = `<span class="iconify" data-icon="vscode-icons:file-type-node" data-inline="true"></span>`;
+const iGCloud = `<span class="iconify" data-icon="logos:google-cloud" data-inline="true"></span>`;
+const iFunctions = `<span class="iconify" data-icon="logos:google-cloud-functions" data-inline="true"></span>`;
+const iFirebase = `<span class="iconify" data-icon="logos:firebase" data-inline="true"></span>`;
+const iFirestore = `<span class="iconify" data-icon="vscode-icons:file-type-firestore" data-inline="true"></span>`;
+const iPandas = `<span class="iconify" data-icon="simple-icons:pandas" data-inline="true"></span>`;
 
-const iASM = `<span class="iconify" data-icon="file-icons:assembly-intel" data-inline="false"></span>`;
-const iMASM = `<span class="iconify" data-icon="logos:visual-studio" data-inline="false"></span>`;
+const iASM = `<span class="iconify" data-icon="file-icons:assembly-intel" data-inline="true"></span>`;
+const iMASM = `<span class="iconify" data-icon="logos:visual-studio" data-inline="true"></span>`;
 
-const iPython = `<span class="iconify" data-icon="logos:python" data-inline="false"></span>`;
-const iJS = `<span class="iconify" data-icon="logos:javascript" data-inline="false"></span>`;
+const iPython = `<span class="iconify" data-icon="logos:python" data-inline="true"></span>`;
+const iJS = `<span class="iconify" data-icon="logos:javascript" data-inline="true"></span>`;
+
+const iGitHub = `<span class="iconify" data-icon="akar-icons:github-fill" data-inline="true"></span>`;
+const iLink = `<span class="iconify" data-icon="akar-icons:link-out" data-inline="true"></span>`;
 
 const projects = [
     {
         title: "NFL Table",
         description:
-            "Single-page web app for interactively querying, filtering, and analyzing play-by-play NFL statistics over the past ~10 seasons.",
+            "Single-page web app for interactively querying, filtering, and analyzing play-by-play NFL statistics over the past ~10 seasons",
         motive: "Personal side-project",
         technologies: `Typescript ${iTS} | React ${iReact} | Node.js & Express ${iNode} | Python & Pandas (ETL & data scripting) ${iPandas} | Firebase Hosting (serverless architecture) ${iFirebase} | Google Cloud Functions (API layer) ${iFunctions} | Google BigQuery (analytical datastore) ${iGCloud} | Google Firestore (application datastore) ${iFirestore}`,
         highlight:
-            "Built a metadata layer which acts as a bridge between the web frontend and the database backend; for example, updating a field name or adding a new field would only occur in one central location - rather than across both the frontend and the backend",
+            "Built a metadata layer which acts as a bridge between the web frontend and the database backend; for example, updating a field name or adding a new field occurs in one central location, rather than separately across the frontend and the backend",
         linkURL: "http://www.nfltable.com",
-        linkText: "Link",
+        linkText: `${iLink} Link`,
         imgURL: "./images/portfolio/nfl-table.png",
     },
     {
         title: "Assembly I/O",
-        description: "Low-level I/O program in assembly code, with procedures to read and write strings, integers, and floats.",
+        description: "Low-level I/O program in assembly code, with procedures to read and write strings, integers, and floats",
         motive: "CS271 Computer Architecture",
         technologies: `IA-32 Assembly ${iASM} | Microsoft Macro Assembler ${iMASM}`,
         highlight: "Completed class extra credit portion to handle float values up to REAL10 extended precision using the IA-32 FPU",
         linkURL: "https://github.com/jbaird29/assembly-string-primitives",
-        linkText: "GitHub",
+        linkText: `${iGitHub} GitHub`,
         imgURL: "./images/portfolio/asm.jpg",
     },
     {
@@ -44,7 +47,7 @@ const projects = [
         highlight:
             "Built the ability to preserve and restores game state with browser localStorage; a separate implementation preserves game state via MySQL backend",
         linkURL: "https://github.com/jbaird29/janggi",
-        linkText: "GitHub",
+        linkText: `${iGitHub} GitHub`,
         imgURL: "./images/portfolio/janggi.png",
     },
 ];
@@ -69,7 +72,7 @@ class Project {
 
     _getLink() {
         const el = document.createElement("a");
-        el.innerText = this.linkText;
+        el.innerHTML = this.linkText;
         el.href = this.linkURL;
         el.target = "_blank";
         el.classList.add("btn");
