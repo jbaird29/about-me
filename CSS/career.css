@@ -5,7 +5,7 @@
 }
 .webdev-icon {
     width: 5rem;
-    float: right;
+    float: left;
     margin-left: 30px;
 }
 .skill-row {
@@ -14,3 +14,54 @@
     text-align: left;
 }
 /* TODO - Downsize the images! */
+
+/* CLASSES BULLETS */
+#classes-container {
+    display: flex;
+    justify-content: center;
+}
+
+#classes-container ul {
+    flex: 0 1 auto;
+    margin: 0 36px;
+}
+
+#classes-container li {
+    list-style: initial;
+    text-align: left;
+    margin: 4px 0 0 0;
+}
+
+#classes-container p {
+    font-weight: bold;
+    margin: 0 0 12px 0;
+}
+
+/* CAREER TABLE */
+#career-container table {
+    margin: 0 auto;
+}
+
+#career-container thead {
+    text-align: center;
+}
+
+#career-container tbody {
+    text-align: left;
+}
+
+#career-container td {
+    padding: 4px 24px;
+}
+
+.pdf-viewer {
+    display: none;
+    width: 95%;
+    position: static;
+    top: 0;
+}
+
+.pdf-viewer-active {
+    display: inline;
+    height: 500px;
+}

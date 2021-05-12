@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="css/styles.css" />
         <link rel="stylesheet" href="css/career.css" />
         <link rel="icon" href="favicon.ico" />
+        <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
     </head>
     <body>
         <nav>
@@ -25,42 +26,94 @@
 
         <main>
             <h2>Career Experience</h2>
-            <p>[TODO: make this into unordered list (project requirement); add some descriptions of each]</p>
-            <p>2021-Current: Post-baccalaureate Computer Science Student @ Oregon State University</p>
-            <p>2019-2021: Software Sales Engineer @ Google Cloud, Looker (New York)</p>
-            <p>2017-2019: Investment Associate @ H.I.G Capital (New York)</p>
-            <p>2014-2017: Investment Banking Analyst @ Bank of Montreal (New York)</p>
+            <div id="career-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Dates</th>
+                            <th>Position</th>
+                            <th>Entity</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2021-Current</td>
+                            <td>Computer Science Student (Post-bacc)</td>
+                            <td>Oregon State University</td>
+                        </tr>
+                        <tr>
+                            <td>2019-2021</td>
+                            <td>Software Sales Engineer</td>
+                            <td>Google Cloud, Looker (New York)</td>
+                        </tr>
+                        <tr>
+                            <td>2017-2019</td>
+                            <td>Investment Associate</td>
+                            <td>H.I.G Capital (New York)</td>
+                        </tr>
+                        <tr>
+                            <td>2014-2017</td>
+                            <td>Investment Banking Analyst</td>
+                            <td>Bank of Montreal (New York)</td>
+                        </tr>
+                        <tr>
+                            <td>2010-2014</td>
+                            <td>Finance & Accounting Major</td>
+                            <td>Emory University</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
             <hr />
-            <h2>Classes</h2>
-            <p>[TODO: fill out this info]</p>
-            <p>Completed: CS161, CS162, CS225, CS271</p>
-            <p>In-progress: CS261, CS290, CS340</p>
+            <h2>Computer Science Classes</h2>
+            <div id="classes-container">
+                <ul>
+                    <p>Completed:</p>
+                    <li>161: Intro to Computer Science I</li>
+                    <li>162: Intro to Computer Science II</li>
+                    <li>225: Discrete Mathematics</li>
+                    <li>271: Computer Architecture & Assembly</li>
+                </ul>
+
+                <ul>
+                    <p>In-progress:</p>
+                    <li>261: Data Structures</li>
+                    <li>290: Web Development</li>
+                    <li>340: Introduction to Databases</li>
+                </ul>
+            </div>
             <hr />
             <h2>Skills & Experience</h2>
-            <p>[TODO: fill out this info]</p>
             <div class="skill-row">
                 <img class="sql-icon" src="images/sql-icon.png" alt="SQL" />
-                <h3>Data Analysis</h3>
+                <h3>Data Analytics</h3>
                 <p class="skill-description-data">
-                    Proficient in using data analysis using SQL; familiary with ETL techniques and modern data warehouse design
+                    Proficient in data analysis and familiar with modern ETL and data warehousing techniques
                 </p>
             </div>
             <div class="skill-row">
                 <img class="webdev-icon" src="images/webdev-icon.png" alt="web development" />
                 <h3>Web Development</h3>
-                <p class="skill-description-web">Basic skills in web development using HTML, CSS, and vanilla Javascript</p>
+                <p class="skill-description-web">Skilled in modern web development frameworks</p>
             </div>
             <hr />
             <h2>My Resume</h2>
-            <p>[TODO: Add resume]</p>
-            <p>[TODO: Add resume preview? need to show a 'scroll box' somewhere]</p>
-            <a class="btn" target="_blank" href="">View</a>
-            <a class="btn" target="_blank" href="">Download</a>
+            <a class="btn" id="view-pdf-btn"><span class="iconify" data-icon="ant-design:eye-filled" data-inline="true"></span> Preview</a>
+            <a class="btn" href="assets/PLACEHOLDER-jonathan-baird-resume.pdf" download target="_blank" href=""><span class="iconify" data-icon="akar-icons:download" data-inline="true"></span> Download</a>
+            <!-- https://stackoverflow.com/questions/17784037/how-to-display-pdf-file-in-html -->
+            <embed
+                id="pdf-viewer"
+                class="pdf-viewer"
+                type="application/pdf"
+                src="assets/PLACEHOLDER-jonathan-baird-resume.pdf"
+                scrolling="auto"
+            ></iframe>
         </main>
 
         <footer>
             <p class="footer-tag">© <span id="copyright-year"></span> Jonathan Baird.</p>
         </footer>
+        <script src="scripts/career.js"></script>
     </body>
 
     <script>
