@@ -22,9 +22,9 @@ const projects = [
         description:
             "Single-page web app for interactively querying, filtering, and analyzing play-by-play NFL statistics over the past ~10 seasons",
         motive: "Personal side-project",
-        technologies: `Typescript ${iTS} | React ${iReact} | Node.js & Express ${iNode} | Python & Pandas (ETL & data scripting) ${iPandas} | Firebase Hosting (serverless architecture) ${iFirebase} | Google Cloud Functions (API layer) ${iFunctions} | Google BigQuery (analytical datastore) ${iGCloud} | Google Firestore (application datastore) ${iFirestore}`,
+        technologies: `${iTS} Typescript | ${iReact} React | ${iNode} Node.js & Express | ${iPandas} Python & Pandas (ETL & data scripting) | ${iFirebase} Firebase Hosting (serverless architecture) | ${iFunctions} Google Cloud Functions (API layer) | ${iGCloud} Google BigQuery (analytical datastore) | ${iFirestore} Google Firestore (application datastore)`,
         highlight:
-            "Built a metadata layer which acts as a bridge between the web frontend and the database backend; for example, updating a field name or adding a new field occurs in one central location, rather than separately across the frontend and the backend",
+            "Built a metadata layer to bridge the web frontend with the database backend; for example, updating a field name or adding a new field occurs in one central location, rather than separately across the frontend and the backend",
         linkURL: "http://www.nfltable.com",
         linkText: `${iLink} Link`,
         imgURL: "./images/portfolio/nfl-table.png",
@@ -33,7 +33,7 @@ const projects = [
         title: "Assembly I/O",
         description: "Low-level I/O program in assembly code, with procedures to read and write strings, integers, and floats",
         motive: "CS271 Computer Architecture",
-        technologies: `IA-32 Assembly ${iASM} | Microsoft Macro Assembler ${iMASM}`,
+        technologies: `${iASM} IA-32 Assembly | ${iMASM} Microsoft Macro Assembler`,
         highlight: "Completed class extra credit portion to handle float values up to REAL10 extended precision using the IA-32 FPU",
         linkURL: "https://github.com/jbaird29/assembly-string-primitives",
         linkText: `${iGitHub} GitHub`,
@@ -43,7 +43,7 @@ const projects = [
         title: "Janggi (Korean Chess)",
         description: "Implementation of Janggi in both Python (for class project) and Javascript / HTML (performed as personal project)",
         motive: "CS162 Introduction to Computer Science II",
-        technologies: `Python 3 ${iPython} | Javascript ES6+ ${iJS}`,
+        technologies: `${iPython} Python 3 | ${iJS} Javascript ES6+`,
         highlight:
             "Built the ability to preserve and restores game state with browser localStorage; a separate implementation preserves game state via MySQL backend",
         linkURL: "https://github.com/jbaird29/janggi",

@@ -2,12 +2,16 @@
 https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
 
 hr {
-    width: calc(100% - 4rem);
+    width: 100%;
+}
+
+#projects-root {
+    width: min(95%, 1200px);
+    margin: auto;
 }
 
 .project-container {
     /* border: 1px solid lightblue; */
-    margin: 0 2rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
