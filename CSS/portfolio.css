@@ -1,0 +1,57 @@
+/* Used flexbox guide here:
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+
+hr {
+    width: calc(100% - 4rem);
+}
+
+.project-container {
+    /* border: 1px solid lightblue; */
+    margin: 0 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-container table {
+    text-align: left;
+    flex: 1 1 800px;
+    padding: 16px;
+}
+
+.project-container tr {
+}
+
+.project-container th {
+    vertical-align: top;
+    width: 120px;
+}
+
+.project-container td {
+    vertical-align: top;
+    padding: 3px;
+}
+
+.img-container {
+    flex: 0 0 160px;
+    background-color: #f1fcfc;
+    border: 1px dashed grey;
+    box-shadow: -2px 2px 5px grey;
+    border-radius: 5%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 160px;
+    padding: 16px;
+    text-align: center;
+}
+
+.img-container img {
+    width: 160px;
+    margin: auto;
+}
+
+.img-container a {
+    margin: 16px auto 0 auto;
+}
