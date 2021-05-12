@@ -1,11 +1,12 @@
 #slideshow-container {
     position: relative;
     display: inline-block;
+    border: 1px solid black;
+    box-shadow: -1px 1px 3px grey;
 }
 
 .slideshow-pic {
     display: none;
-    border: 1px solid black;
     max-height: 85vh;
 }
 
@@ -13,14 +14,26 @@
     display: block;
 }
 
+.slideshow-caption-container {
+    z-index: 2;
+    position: absolute;
+    bottom: 0px;
+    width: 99.8%;
+}
 .slideshow-caption {
     color: black;
     display: none;
-    margin: 10px 0;
+    margin: auto;
+    background-color: #f1fcfc;
+    opacity: 0.92;
+    border: 1px solid #11999e;
+    box-shadow: -1px 1px 3px grey;
+    padding: 8px 0;
+    width: 99.8%;
 }
 
 .slideshow-caption-active {
-    display: block;
+    display: inline-block;
 }
 
 .direction-btn {
