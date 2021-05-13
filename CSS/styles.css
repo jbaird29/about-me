@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     color: #40514e;
@@ -48,18 +52,21 @@ hr {
 
 .btn {
     border-radius: 20px;
-    vertical-align: baseline;
-    height: 19px;
-    line-height: 19px;
+    /* vertical-align: baseline; */
+    height: 36px;
+    line-height: 36px;
     color: #eaf6f6;
     width: 120px;
-    font-weight: 100;
-    padding: 11px;
-    background-color: #11999e;
+    padding: 0;
+    background-color: #66bfbf;
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
     text-align: center;
     border: 1px solid #0d7a7e;
     box-shadow: -1px 1px 1px grey;
+}
+
+.btn:hover {
+    background-color: #11999e;
 }

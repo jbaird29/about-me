@@ -3,10 +3,10 @@
     <head>
         <meta charset="utf-8" />
         <title>Jon Baird</title>
+        <link rel="stylesheet" href="css/styles.css" />
         <link rel="stylesheet" href="css/navbar.css" />
         <link rel="stylesheet" href="css/footer.css" />
         <link rel="stylesheet" href="css/index.css" />
-        <link rel="stylesheet" href="css/styles.css" />
         <link rel="icon" href="favicon.ico" />
         <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
     </head>
@@ -73,14 +73,15 @@
             <hr />
 
             <h2>Get In Touch!</h2>
-            <p>Send me a message below - you'll receive a confirmation email.</p>
+            <p id="form-prompt">Send me a message below.</p>
             <form id="contact-form">
                 <input autocomplete="off" class="form-inputs" placeholder="Name" type="text" name="name" id="name" />
                 <input autocomplete="off" class="form-inputs" placeholder="Email" type="email" name="email" id="email" />
                 <textarea class="form-inputs" placeholder="Message" name="message" id="message" rows="6"></textarea>
-                <button class="btn" type="submit">
+                <button class="btn" id="submit-btn">
                     <span class="iconify" data-icon="ri:send-plane-fill" data-inline="true"></span> Send
                 </button>
+                <div id="submitting-form" class="submitting-form"><div class="loader"></div></div>
             </form>
             <p>Or connect via one of these channels.</p>
             <a class="btn" target="_blank" href="mailto:jbaird29@gmail.com"
@@ -97,6 +98,8 @@
         <footer>
             <p>© <span id="copyright-year"></span> Jonathan Baird</p>
         </footer>
+
+        <script src="scripts/contact-form.js"></script>
     </body>
 
     <script>
