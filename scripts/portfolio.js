@@ -20,7 +20,7 @@ const projects = [
     {
         title: "NFL Table",
         description:
-            "Single-page web app for interactively querying, filtering, and analyzing play-by-play NFL statistics over the past ~10 seasons",
+            "Single-page web application and API backend for interactively querying, filtering, and analyzing 500MB of play-by-play NFL statistics spanning the past ~10 seasons",
         motive: "Personal side-project",
         technologies: `${iTS} Typescript | ${iReact} React | ${iNode} Node.js & Express | ${iPandas} Python & Pandas (ETL & data scripting) | ${iFirebase} Firebase Hosting (serverless architecture) | ${iFunctions} Google Cloud Functions (API layer) | ${iGCloud} Google BigQuery (analytical datastore) | ${iFirestore} Google Firestore (application datastore)`,
         highlight:
