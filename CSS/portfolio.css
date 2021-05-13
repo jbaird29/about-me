@@ -36,8 +36,8 @@ hr {
 
 .img-container {
     flex: 0 0 160px;
-    background-color: #f1fcfc;
-    border: 1px dashed grey;
+    background-color: white;
+    border: 1px solid grey;
     box-shadow: -2px 2px 5px grey;
     border-radius: 5%;
     display: flex;
