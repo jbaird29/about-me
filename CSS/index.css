@@ -5,8 +5,11 @@
     border: 1px solid #11999e;
 }
 
+.about-container {
+    margin: 0 17%;
+}
+
 #contact-form {
-    text-align: left;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -52,13 +55,13 @@
 }
 
 #contact-form button {
+    margin: 8px 0 0 0;
     font-size: 1rem;
     padding: 0;
     border-radius: 6px;
     height: 36px;
     color: #eaf6f6;
     width: 100%;
-    /* background-color: #11999e; */
     background-color: #66bfbf;
     text-decoration: none;
     cursor: pointer;
