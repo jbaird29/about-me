@@ -4,3 +4,69 @@
     background-color: white;
     border: 1px solid #11999e;
 }
+
+#contact-form {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 360px;
+    margin: auto;
+}
+
+.form-inputs {
+    padding: 6px 6px 6px 30px;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    margin: 4px 0;
+    background-color: inherit;
+    border: 1px solid #11999e;
+    border-radius: 6px;
+}
+
+.form-inputs::placeholder {
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    color: #808080;
+}
+
+#name {
+    background: url("https://api.iconify.design/akar-icons:person.svg") no-repeat;
+    background-position: 6px 6px;
+}
+
+#email {
+    background: url("https://api.iconify.design/carbon:email.svg") no-repeat;
+    background-position: 6px 6px;
+}
+
+#message {
+    background: url("https://api.iconify.design/bx:bx-message-square-dots.svg") no-repeat;
+    background-position: 6px 6px;
+}
+
+#contact-form textarea {
+    resize: none;
+}
+
+#contact-form button {
+    font-size: 1rem;
+    padding: 0;
+    border-radius: 6px;
+    height: 36px;
+    color: #eaf6f6;
+    width: 100%;
+    /* background-color: #11999e; */
+    background-color: #66bfbf;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    border: 1px solid #0d7a7e;
+    box-shadow: -1px 1px 1px grey;
+}
+
+#contact-form button:hover {
+    background-color: #11999e;
+}
