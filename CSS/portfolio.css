@@ -1,42 +1,40 @@
 /* Used flexbox guide here:
 https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
 
-hr {
-    width: 100%;
-}
-
-#projects-root {
-    width: min(95%, 1200px);
-    margin: auto;
-}
-
 .project-container {
-    /* border: 1px solid lightblue; */
     display: flex;
     flex-wrap: wrap;
+    /* flex-direction: row; */
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.project-container table {
+.project-container dl {
+    width: 100%;
     text-align: left;
-    flex: 1 1 800px;
-    padding: 16px;
-    margin-left: 6px;
 }
 
-.project-container th {
-    vertical-align: top;
-    width: 120px;
+.project-container dt {
+    font-weight: bold;
 }
 
-.project-container td {
-    vertical-align: top;
-    padding: 3px;
+.row-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 12px 0;
+}
+
+.row-container dt {
+    flex: 0 0 130px;
+}
+
+.row-container dd {
+    flex: 1 1 360px;
+    margin: 0;
 }
 
 .img-container {
-    flex: 0 0 160px;
     background-color: #feffff;
     border: 1px solid grey;
     box-shadow: -2px 2px 5px grey;
@@ -47,6 +45,7 @@ hr {
     height: 160px;
     padding: 16px;
     text-align: center;
+    margin-right: 24px;
 }
 
 .img-container img {

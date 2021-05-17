@@ -93,25 +93,26 @@ class Project {
         return el;
     }
 
-    _buildTable() {
-        const table = document.createElement("table");
-        const rowsInfo = [
-            { head: "Motive", data: this.motive },
-            { head: "Description", data: this.description },
-            { head: "Highlight", data: this.highlight },
-            { head: "Technologies", data: this.technologies },
+    _buildContent() {
+        const list = document.createElement("dl");
+        const rows = [
+            { title: "Motive", item: this.motive },
+            { title: "Description", item: this.description },
+            { title: "Highlight", item: this.highlight },
+            { title: "Technologies", item: this.technologies },
         ];
-        rowsInfo.forEach((rowInfo) => {
-            const tableRow = document.createElement("tr");
-            const rowHead = document.createElement("th");
-            const rowData = document.createElement("td");
-            rowHead.innerHTML = rowInfo.head;
-            rowData.innerHTML = rowInfo.data;
-            tableRow.appendChild(rowHead);
-            tableRow.appendChild(rowData);
-            table.appendChild(tableRow);
+        rows.forEach((row) => {
+            const container = document.createElement("div");
+            container.classList.add("row-container");
+            const title = document.createElement("dt");
+            const item = document.createElement("dd");
+            title.innerHTML = row.title;
+            item.innerHTML = row.item;
+            container.appendChild(title);
+            container.appendChild(item);
+            list.appendChild(container);
         });
-        return table;
+        return list;
     }
 
     buildElement() {
@@ -120,7 +121,7 @@ class Project {
         const container = document.createElement("div");
         container.classList.add("project-container");
         container.appendChild(this._buildImgBox());
-        container.appendChild(this._buildTable());
+        container.appendChild(this._buildContent());
         el.appendChild(container);
         return el;
     }
