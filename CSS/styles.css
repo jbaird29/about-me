@@ -19,8 +19,25 @@ body {
     background-color: #feffff;
 }
 
+main {
+    width: 66%;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 1200px) {
+    main {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    main {
+        width: 90%;
+    }
+}
+
 h1 {
-    font-size: 4.5rem;
+    font-size: 3.5rem;
     color: #2b7a78;
     margin: 0 auto 10px auto;
     line-height: 1.5;
@@ -47,7 +64,6 @@ hr {
     border-bottom: 0;
     border-left: 0;
     border-right: 0;
-    width: 66%;
     margin: 30px auto;
 }
 
