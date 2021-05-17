@@ -33,7 +33,3 @@ nav a:hover {
 .active-nav {
     color: #feffff;
 }
-
-.active-nav:hover {
-    /* opacity: 0.7; */
-}
