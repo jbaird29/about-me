@@ -1,5 +1,5 @@
 nav {
-    padding: 0.8rem;
+    padding: 0.7rem;
     background-color: #2b7a78;
     position: fixed;
     top: 0;
@@ -22,7 +22,7 @@ nav a {
     color: #bfd9e2;
     text-decoration: none;
     text-align: center;
-    padding: 0.8rem 0.8rem;
+    padding: 0.7rem 0.8rem;
 }
 
 nav a:hover {
