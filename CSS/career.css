@@ -1,10 +1,9 @@
 /* CAREER STRIPS */
 .career-container {
-    /* border: 1px solid blue; */
     display: flex;
     justify-content: center;
-    width: 66%;
     margin: 0 auto;
+    flex-wrap: wrap;
 }
 
 #career-root hr {
@@ -49,14 +48,20 @@
 }
 
 /* CLASSES BULLETS */
+.classes-header {
+    margin-bottom: 12px;
+}
 #classes-container {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    width: min(100%, 650px);
+    margin: 0 auto;
 }
 
 #classes-container ul {
-    flex: 0 1 auto;
-    margin: 0 36px;
+    flex: 1 1 auto;
+    margin: 0;
 }
 
 #classes-container li {
@@ -67,13 +72,12 @@
 
 #classes-container p {
     font-weight: bold;
-    margin: 0 0 12px 0;
+    margin: 12px 0 12px 0;
 }
 
 /* RESUME */
 .resume-btns-container {
     display: flex;
-    width: 66%;
     margin: 0 auto;
     justify-content: center;
 }
