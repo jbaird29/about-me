@@ -25,65 +25,8 @@
         </nav>
 
         <main>
-            <h2>Career Experience</h2>
-            <div id="career-container">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Dates</th>
-                            <th>Position</th>
-                            <th>Entity</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>2021-Current</td>
-                            <td>Computer Science Student (Post-bacc)</td>
-                            <td>Oregon State University</td>
-                        </tr>
-                        <tr>
-                            <td>2019-2021</td>
-                            <td>Software Sales Engineer</td>
-                            <td>Google Cloud, Looker (New York)</td>
-                        </tr>
-                        <tr>
-                            <td>2017-2019</td>
-                            <td>Investment Associate</td>
-                            <td>H.I.G Capital (New York)</td>
-                        </tr>
-                        <tr>
-                            <td>2014-2017</td>
-                            <td>Investment Banking Analyst</td>
-                            <td>Bank of Montreal (New York)</td>
-                        </tr>
-                        <tr>
-                            <td>2010-2014</td>
-                            <td>Finance & Accounting Major</td>
-                            <td>Emory University</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <hr />
-            <div id="career-root">
-
-            </div>
-            <hr />
-            <div style="border: 1px solid blue; display: flex; justify-content: center; width: 66%; margin: 0 auto;">
-                <div style="flex: 0 0 260px; display: flex; flex-direction: column; justify-content: center;">
-                    <img width="100%" src="images/career/bmo.png" alt="">
-                    <p style="margin: 6px 0"><strong>Investment Banking</strong></p>
-                    <p style="margin: 6px 0">2014-2017: Analyst</p>
-                    <p style="margin: 6px 0">New York, NY</p>
-                </div>
-                <div style="text-align: left; flex: 1 1 300px;">
-                    <ul>
-                        <li>BMO Capital Markets is the investment banking division of Bank of Montreal, a multinational financial services company</li>
-                        <li>Worked in the Technology & Business Services group, serving companies in the tech and B2B services industries with a special focus on the Education Technology vertical</li>
-                        <li>Advised companies on Initial Public Offerings, Mergers & Acquisitions, and Debt Financings</li>
-                    </ul>
-                </div>
-            </div>
+            <h2>Career Timeline</h2>
+            <div id="career-root"></div>
             <hr />
             <h2>Computer Science Classes</h2>
             <div id="classes-container">
@@ -103,23 +46,11 @@
                 </ul>
             </div>
             <hr />
-            <h2>Skills & Experience</h2>
-            <div class="skill-row">
-                <img class="sql-icon" src="images/sql-icon.png" alt="SQL" />
-                <h3>Data Analytics</h3>
-                <p class="skill-description-data">
-                    Proficient in data analysis and familiar with modern ETL and data warehousing techniques
-                </p>
-            </div>
-            <div class="skill-row">
-                <img class="webdev-icon" src="images/webdev-icon.png" alt="web development" />
-                <h3>Web Development</h3>
-                <p class="skill-description-web">Skilled in modern web development frameworks</p>
-            </div>
-            <hr />
             <h2>My Resume</h2>
-            <a class="btn" id="view-pdf-btn"><span class="iconify" data-icon="ant-design:eye-filled" data-inline="true"></span> Preview</a>
-            <a class="btn" href="assets/PLACEHOLDER-jonathan-baird-resume.pdf" download target="_blank" href=""><span class="iconify" data-icon="akar-icons:download" data-inline="true"></span> Download</a>
+            <div class="resume-btns-container">
+                <a class="btn" id="view-pdf-btn"><span class="iconify" data-icon="ant-design:eye-filled" data-inline="true"></span> Preview</a>
+                <a class="btn" href="assets/PLACEHOLDER-jonathan-baird-resume.pdf" download target="_blank" href=""><span class="iconify" data-icon="akar-icons:download" data-inline="true"></span> Download</a>
+            </div>
             <!-- https://stackoverflow.com/questions/17784037/how-to-display-pdf-file-in-html -->
             <embed
                 id="pdf-viewer"

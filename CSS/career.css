@@ -1,10 +1,15 @@
 /* CAREER STRIPS */
 .career-container {
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     display: flex;
     justify-content: center;
     width: 66%;
     margin: 0 auto;
+}
+
+#career-root hr {
+    margin: 14px auto;
+    border-top: 1px dashed grey;
 }
 
 .career-image-container {
@@ -16,6 +21,7 @@
 
 .career-image-container p:first-child {
     font-weight: bold;
+    margin-top: 10px;
 }
 
 .career-image-container p {
@@ -23,26 +29,24 @@
 }
 
 .career-bullets-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: left;
     flex: 1 1 300px;
 }
 
-.sql-icon {
-    width: 9rem;
-    float: left;
-    margin-right: 30px;
+.career-bullets-container ul {
+    margin: 0;
 }
-.webdev-icon {
-    width: 5rem;
-    float: left;
-    margin-left: 30px;
+
+.career-bullets-container li {
+    margin-bottom: 6px;
 }
-.skill-row {
-    width: 66%;
-    margin: 50px auto;
-    text-align: left;
+
+.career-bullets-container li:last-child {
+    margin-bottom: 0;
 }
-/* TODO - Downsize the images! */
 
 /* CLASSES BULLETS */
 #classes-container {
@@ -66,23 +70,19 @@
     margin: 0 0 12px 0;
 }
 
-/* CAREER TABLE */
-#career-container table {
+/* RESUME */
+.resume-btns-container {
+    display: flex;
+    width: 66%;
     margin: 0 auto;
+    justify-content: center;
 }
 
-#career-container thead {
-    text-align: center;
+.resume-btns-container a {
+    margin: 0 12px;
 }
 
-#career-container tbody {
-    text-align: left;
-}
-
-#career-container td {
-    padding: 4px 24px;
-}
-
+/* PDF VIEWER */
 .pdf-viewer {
     display: none;
     width: 95%;
