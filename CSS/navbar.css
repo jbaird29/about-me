@@ -1,6 +1,6 @@
 nav {
     padding: 0.8rem;
-    background-color: #11999e;
+    background-color: #2b7a78;
     position: fixed;
     top: 0;
     width: 100%;
@@ -19,20 +19,21 @@ nav li {
 }
 
 nav a {
-    color: #eaf6f6;
+    color: #bfd9e2;
     text-decoration: none;
     text-align: center;
     padding: 0.8rem 0.8rem;
 }
 
 nav a:hover {
-    opacity: 0.5;
+    background-color: #3aafa9;
+    color: #feffff;
 }
 
 .active-nav {
-    background-color: grey;
+    color: #feffff;
 }
 
 .active-nav:hover {
-    opacity: 0.7;
+    /* opacity: 0.7; */
 }

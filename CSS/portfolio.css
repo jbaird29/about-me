@@ -22,6 +22,7 @@ hr {
     text-align: left;
     flex: 1 1 800px;
     padding: 16px;
+    margin-left: 6px;
 }
 
 .project-container th {
@@ -36,7 +37,7 @@ hr {
 
 .img-container {
     flex: 0 0 160px;
-    background-color: white;
+    background-color: #feffff;
     border: 1px solid grey;
     box-shadow: -2px 2px 5px grey;
     border-radius: 5%;

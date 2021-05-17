@@ -1,8 +1,8 @@
 .headshot {
     border-radius: 75px;
     width: 150px;
-    background-color: white;
-    border: 1px solid #11999e;
+    background-color: #feffff;
+    border: 1px solid #2b7a78;
 }
 
 /* ABOUT ME */
@@ -31,7 +31,7 @@
 
 .img-container {
     flex: 0 0 160px;
-    background-color: white;
+    background-color: #feffff;
     border: 1px solid grey;
     box-shadow: -2px 2px 5px grey;
     border-radius: 5%;
@@ -100,7 +100,7 @@
     font-size: 1rem;
     margin: 4px 0;
     background-color: inherit;
-    border: 1px solid #11999e;
+    border: 1px solid #2b7a78;
     border-radius: 6px;
 }
 
@@ -116,17 +116,17 @@
 }
 
 #name {
-    background: url("https://api.iconify.design/akar-icons:person.svg") no-repeat white;
+    background: url("https://api.iconify.design/akar-icons:person.svg") no-repeat #feffff;
     background-position: 6px 6px;
 }
 
 #email {
-    background: url("https://api.iconify.design/carbon:email.svg") no-repeat white;
+    background: url("https://api.iconify.design/carbon:email.svg") no-repeat #feffff;
     background-position: 6px 6px;
 }
 
 #message {
-    background: url("https://api.iconify.design/bx:bx-message-square-dots.svg") no-repeat white;
+    background: url("https://api.iconify.design/bx:bx-message-square-dots.svg") no-repeat #feffff;
     background-position: 6px 6px;
 }
 
@@ -135,23 +135,9 @@
 }
 
 #contact-form button {
+    width: 100%;
     margin: 8px 0 0 0;
     font-size: 1rem;
-    padding: 0;
-    border-radius: 6px;
-    height: 36px;
-    color: #eaf6f6;
-    width: 100%;
-    background-color: #66bfbf;
-    text-decoration: none;
-    cursor: pointer;
-    text-align: center;
-    border: 1px solid #0d7a7e;
-    box-shadow: -1px 1px 1px grey;
-}
-
-#contact-form button:hover {
-    background-color: #11999e;
 }
 
 .submitting-form {
@@ -175,7 +161,7 @@
 .loader {
     margin: 20% auto 0 auto;
     border: 8px solid #f3f3f3; /* Light grey */
-    border-top: 8px solid #11999e;
+    border-top: 8px solid #2b7a78;
     border-radius: 50%;
     width: 60px;
     height: 60px;

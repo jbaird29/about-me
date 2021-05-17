@@ -2,39 +2,45 @@
     box-sizing: border-box;
 }
 
+/* 
+https://visme.co/blog/website-color-schemes/ 
+#feffff
+#def2f1
+#3aafa9
+#2b7a78
+#17252a 
+*/
+
+/*
+background: #f1fcfc;
+h1: #66bfbf
+*/
+
 body {
     margin: 0;
     color: #40514e;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #f1fcfc;
+    background-color: #feffff;
 }
 
 h1 {
     font-size: 4.5rem;
-    color: #66bfbf;
+    color: #2b7a78;
     margin: 0 auto 10px auto;
     line-height: 1.5;
 }
 
 h2 {
     font-size: 1.5rem;
-    color: #66bfbf;
+    color: #2b7a78;
     margin: 0;
     font-weight: normal;
     margin-bottom: 24px;
 }
 
 h3 {
-    color: #66bfbf;
-}
-
-a {
-    color: #11999e;
-}
-
-a:hover {
-    color: #eaf6f6;
+    color: #2b7a78;
 }
 
 main {
@@ -42,7 +48,7 @@ main {
 }
 
 hr {
-    border-top: 5px dotted #66bfbf;
+    border-top: 4px dotted #2b7a78;
     border-bottom: 0;
     border-left: 0;
     border-right: 0;
@@ -58,15 +64,15 @@ hr {
     color: #eaf6f6;
     width: 120px;
     padding: 0;
-    background-color: #66bfbf;
+    background-color: #2b7a78;
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
     text-align: center;
-    border: 1px solid #0d7a7e;
+    border: 1px solid #17252a;
     box-shadow: -1px 1px 1px grey;
 }
 
 .btn:hover {
-    background-color: #11999e;
+    background-color: #3aafa9;
 }
