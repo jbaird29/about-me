@@ -1,3 +1,32 @@
+/* CAREER STRIPS */
+.career-container {
+    border: 1px solid blue;
+    display: flex;
+    justify-content: center;
+    width: 66%;
+    margin: 0 auto;
+}
+
+.career-image-container {
+    flex: 0 0 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.career-image-container p:first-child {
+    font-weight: bold;
+}
+
+.career-image-container p {
+    margin: 6px 0;
+}
+
+.career-bullets-container {
+    text-align: left;
+    flex: 1 1 300px;
+}
+
 .sql-icon {
     width: 9rem;
     float: left;
