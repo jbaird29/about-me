@@ -14,41 +14,34 @@
     display: block;
 }
 
-.slideshow-caption-container {
-    z-index: 2;
-    position: absolute;
-    bottom: 0px;
-    width: 99.8%;
+.slideshow-overlay-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: block;
+    width: 100%;
+    background-color: #feffff;
 }
 .slideshow-caption {
     color: black;
     display: none;
-    margin: auto;
-    background-color: #feffff;
-    opacity: 0.95;
-    border: 1px solid #17252a;
-    box-shadow: -1px 1px 3px grey;
-    padding: 8px 0;
-    width: 99.8%;
+    flex: 1 1 300px;
+    padding: 0;
+    margin: 8px 0;
 }
-
 .slideshow-caption-active {
     display: inline-block;
 }
-
 .direction-btn {
-    position: absolute;
-    z-index: 1;
-    height: 99%;
-    bottom: 0;
-    border: 0;
-    background-color: black;
-    color: white;
-    opacity: 0.13;
-    padding: 0 12px;
+    font-size: 24px;
+    color: black;
+    flex: 0 0 50px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
 }
 .direction-btn:hover {
-    opacity: 0.6;
+    background-color: lightgray;
 }
 
 #previous-btn {

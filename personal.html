@@ -26,17 +26,6 @@
         <main>
             <h2>These are a few of my favorite things...</h2>
             <div id="slideshow-container">
-                <div class="slideshow-caption-container">
-                    <p class="slideshow-caption slideshow-caption-active">Rooting for Philadelphia sports teams</p>
-                    <p class="slideshow-caption">Spending time with my fiancee</p>
-                    <p class="slideshow-caption">Playing (especially winning at) board games!</p>
-                    <p class="slideshow-caption">Listening to music and attending concerts</p>
-                    <p class="slideshow-caption">Exploring nature</p>
-                    <p class="slideshow-caption">Exploring cities</p>
-                    <p class="slideshow-caption">Playing with my cat - Goose</p>
-                    <p class="slideshow-caption">Traveling to new countries</p>
-                    <p class="slideshow-caption">Eating at new restaurants</p>
-                </div>
                 <img class="slideshow-pic slideshow-pic-active" src="images/personal/philly-sports.jpeg" alt="Philly Sports" />
                 <img class="slideshow-pic" src="images/personal/fiancee.jpeg" alt="Fiancee" />
                 <img class="slideshow-pic" src="images/personal/board-games.jpeg" alt="Board Games" />
@@ -46,8 +35,21 @@
                 <img class="slideshow-pic" src="images/personal/goose.jpeg" alt="My Cat (Goose)" />
                 <img class="slideshow-pic" src="images/personal/traveling.jpeg" alt="Traveling" />
                 <img class="slideshow-pic" src="images/personal/restaurants.jpeg" alt="Restaurants" />
-                <button class="direction-btn" id="previous-btn">&#9664;</button>
-                <button class="direction-btn" id="next-btn">&#9654;</button>
+                <div class="slideshow-overlay-container">
+                    <button class="direction-btn" id="previous-btn">&#10094;</button>
+                    <div class="slideshow-caption-container">
+                        <p class="slideshow-caption slideshow-caption-active">Rooting for Philadelphia sports teams</p>
+                        <p class="slideshow-caption">Spending time with my fiancee</p>
+                        <p class="slideshow-caption">Playing (especially winning at) board games!</p>
+                        <p class="slideshow-caption">Listening to music and attending concerts</p>
+                        <p class="slideshow-caption">Exploring nature</p>
+                        <p class="slideshow-caption">Exploring cities</p>
+                        <p class="slideshow-caption">Playing with my cat - Goose</p>
+                        <p class="slideshow-caption">Traveling to new countries</p>
+                        <p class="slideshow-caption">Eating at new restaurants</p>
+                    </div>
+                    <button class="direction-btn" id="next-btn">&#10095;</button>
+                </div>
             </div>
         </main>
 
