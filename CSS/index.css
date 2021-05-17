@@ -80,6 +80,10 @@
 }
 
 /* CONTACT FORM */
+#form-prompt {
+    margin: 16px 0;
+}
+
 #contact-form {
     position: relative;
     display: flex;
@@ -107,18 +111,22 @@
     color: #bebebe;
 }
 
+.validate:invalid {
+    border: 1px solid red;
+}
+
 #name {
-    background: url("https://api.iconify.design/akar-icons:person.svg") no-repeat;
+    background: url("https://api.iconify.design/akar-icons:person.svg") no-repeat white;
     background-position: 6px 6px;
 }
 
 #email {
-    background: url("https://api.iconify.design/carbon:email.svg") no-repeat;
+    background: url("https://api.iconify.design/carbon:email.svg") no-repeat white;
     background-position: 6px 6px;
 }
 
 #message {
-    background: url("https://api.iconify.design/bx:bx-message-square-dots.svg") no-repeat;
+    background: url("https://api.iconify.design/bx:bx-message-square-dots.svg") no-repeat white;
     background-position: 6px 6px;
 }
 

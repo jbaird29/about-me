@@ -73,12 +73,12 @@
             <hr />
 
             <h2>Get In Touch!</h2>
-            <p id="form-prompt">Send me a message below.</p>
+            <p id="form-prompt">&#x1F44B; Send me a message below.</p>
             <form id="contact-form">
-                <input autocomplete="off" class="form-inputs" placeholder="Name" type="text" name="name" id="name" />
-                <input autocomplete="off" class="form-inputs" placeholder="Email" type="email" name="email" id="email" />
-                <textarea class="form-inputs" placeholder="Message" name="message" id="message" rows="6"></textarea>
-                <button class="btn" id="submit-btn">
+                <input required autocomplete="off" class="form-inputs" placeholder="Name" type="text" name="name" id="name" />
+                <input required autocomplete="off" class="form-inputs" placeholder="Email" type="email" name="email" id="email" />
+                <textarea required class="form-inputs" placeholder="Message" name="message" id="message" rows="6"></textarea>
+                <button class="btn" id="submit-btn" type="submit">
                     <span class="iconify" data-icon="ri:send-plane-fill" data-inline="true"></span> Send
                 </button>
                 <div id="submitting-form" class="submitting-form"><div class="loader"></div></div>
