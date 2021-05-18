@@ -4,10 +4,16 @@ const changePic = (shift) => {
     const pictures = document.getElementsByClassName("slideshow-pic");
     const captions = document.getElementsByClassName("slideshow-caption");
     const len = pictures.length;
-    pictures[active].classList.remove("slideshow-pic-active");
+    // remove the old picture
+    pictures[active].style.animation = shift > 0 ? "slideouttoleft 0.5s" : "slideouttoright 0.5s";
+    pictures[active].classList.remove("active");
+    pictures[active].classList.add("inactive");
     captions[active].classList.remove("slideshow-caption-active");
+    // add the new picture
     active = (((active + shift) % len) + len) % len; // modulo, for negative values
-    pictures[active].classList.add("slideshow-pic-active");
+    pictures[active].style.animation = shift > 0 ? "slideinfromright 0.5s" : "slideinfromleft 0.5s";
+    pictures[active].classList.add("active");
+    pictures[active].classList.remove("inactive");
     captions[active].classList.add("slideshow-caption-active");
 };
 
