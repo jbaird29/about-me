@@ -25,7 +25,7 @@ const projects = [
         technologies: `${iTS} Typescript | ${iReact} React | ${iNode} Node.js & Express | ${iPandas} Python & Pandas (ETL & data scripting) | ${iFirebase} Firebase Hosting (serverless architecture) | ${iFunctions} Google Cloud Functions (API layer) | ${iGCloud} Google BigQuery (analytical datastore) | ${iFirestore} Google Firestore (application datastore)`,
         highlight:
             "Built a metadata layer to bridge the web frontend with the database backend; for example, updating a field name or adding a new field occurs in one central location, rather than separately across the frontend and the backend",
-        linkURL: "http://www.nfltable.com",
+        linkURL: "https://www.nfltable.com",
         linkText: `${iLink} Link`,
         imgURL: "./images/portfolio/nfl-table.png",
     },
