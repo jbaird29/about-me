@@ -3,12 +3,8 @@
 }
 
 /* 
-https://visme.co/blog/website-color-schemes/ 
-#feffff
-#def2f1
-#3aafa9
-#2b7a78
-#17252a 
+SOURCE USED: https://visme.co/blog/website-color-schemes/
+For color palette inspiration
 */
 
 body {
@@ -69,7 +65,6 @@ hr {
 
 .btn {
     border-radius: 20px;
-    /* vertical-align: baseline; */
     height: 36px;
     line-height: 36px;
     color: #eaf6f6;

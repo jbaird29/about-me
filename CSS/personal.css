@@ -46,7 +46,10 @@
     visibility: hidden;
 }
 
-/* USED: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations */
+/* 
+SOURCE USED: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations 
+This allows HTML elements to transition between two states with an animation effect
+*/
 @keyframes slideinfromleft {
     from {
         visibility: hidden;

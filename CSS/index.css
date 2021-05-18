@@ -152,12 +152,14 @@
     margin: 4px 0;
 }
 
-/* Used: */
-/* https://www.w3schools.com/howto/howto_css_loader.asp */
 .submitting-form-active {
     display: inline;
 }
 
+/* 
+SOURCE USED: https://www.w3schools.com/howto/howto_css_loader.asp 
+This creates a circular spinning "loading" icon after form submission
+*/
 .loader {
     margin: 20% auto 0 auto;
     border: 8px solid #f3f3f3; /* Light grey */

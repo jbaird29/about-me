@@ -2,13 +2,13 @@ const previewBtn = document.getElementById("view-pdf-btn");
 let shown = false;
 
 previewBtn.addEventListener("click", () => {
-    const iframe = document.getElementById("pdf-viewer");
+    const embed = document.getElementById("pdf-viewer");
     if (!shown) {
-        iframe.classList.add("pdf-viewer-active");
+        embed.classList.add("pdf-viewer-active");
         previewBtn.innerHTML = "X Close";
         shown = true;
     } else {
-        iframe.classList.remove("pdf-viewer-active");
+        embed.classList.remove("pdf-viewer-active");
         previewBtn.innerHTML = `<span class="iconify" data-icon="ant-design:eye-filled" data-inline="true"></span> Preview`;
         shown = false;
     }
@@ -113,7 +113,6 @@ class CareerStrip {
         const el = document.createElement("div");
         const industry = document.createElement("p");
         industry.innerText = this.industry;
-        // industry.setAttribute();
         el.appendChild(industry);
         const datesPosition = document.createElement("p");
         datesPosition.innerText = this.datesPosition;
