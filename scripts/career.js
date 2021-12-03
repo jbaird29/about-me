@@ -1,18 +1,19 @@
-const previewBtn = document.getElementById("view-pdf-btn");
-let shown = false;
+// Removing resume for now
+// const previewBtn = document.getElementById("view-pdf-btn");
+// let shown = false;
 
-previewBtn.addEventListener("click", () => {
-    const embed = document.getElementById("pdf-viewer");
-    if (!shown) {
-        embed.classList.add("pdf-viewer-active");
-        previewBtn.innerHTML = "X Close";
-        shown = true;
-    } else {
-        embed.classList.remove("pdf-viewer-active");
-        previewBtn.innerHTML = `<span class="iconify" data-icon="ant-design:eye-filled" data-inline="true"></span> Preview`;
-        shown = false;
-    }
-});
+// previewBtn.addEventListener("click", () => {
+//     const embed = document.getElementById("pdf-viewer");
+//     if (!shown) {
+//         embed.classList.add("pdf-viewer-active");
+//         previewBtn.innerHTML = "X Close";
+//         shown = true;
+//     } else {
+//         embed.classList.remove("pdf-viewer-active");
+//         previewBtn.innerHTML = `<span class="iconify" data-icon="ant-design:eye-filled" data-inline="true"></span> Preview`;
+//         shown = false;
+//     }
+// });
 
 const careerStrips = [
     {
