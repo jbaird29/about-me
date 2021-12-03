@@ -7,8 +7,6 @@ submitBtn.addEventListener("click", (e) => {
     const messageEl = document.getElementById("message");
     const inputs = [nameEl, emailEl, messageEl];
     const formPrompt = document.getElementById("form-prompt");
-    // SOURCE USED: https://unicode-table.com/
-    // to obtain the unicode characters for the emojis
     if (!nameEl.checkValidity() || !emailEl.checkValidity() || !messageEl.checkValidity()) {
         formPrompt.innerHTML = "&#x274C; Please properly fill out all the fields!";
         inputs.forEach((input) => input.classList.add("validate"));

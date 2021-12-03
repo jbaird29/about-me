@@ -17,7 +17,6 @@ const changePic = (shift) => {
     captions[active].classList.add("slideshow-caption-active");
 };
 
-// SOURCE USED: https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setInterval
 // the setInterval function automatically changes the displayed picture every ~3 seconds
 // however, if the end-user manually clicks on the left or right button, the automatica interval is cleared
 // this occurs by calling clearInterval with the returned intervalID
