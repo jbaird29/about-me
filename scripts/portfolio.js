@@ -56,6 +56,18 @@ const projects = [
         imgURL: "./images/portfolio/my-card.png",
     },
     {
+        title: "Wordle Solver",
+        description:
+            "An algorithm & associated CLI program to near-optimally solve a wordle problem in an average of ~3.5 guesses (over a 2k word trial).",
+        motive: "Personal project",
+        technologies: `${iPython} Python`,
+        highlight:
+            "An earlier, simplified version utilized bitvectors to improve time efficiency (assumed each square only had Yellow/Grey outcomes).",
+        linkURL: "https://github.com/jbaird29/wordle-solver",
+        linkText: `${iGitHub} GitHub`,
+        imgURL: "./images/portfolio/wordle.png",
+    },
+    {
         title: "Janggi (Korean Chess)",
         description:
             "Implementation of Janggi in both Python (for class project) and Javascript / HTML (performed as personal project)",
